@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SBPAsyncImage",
+        "repositoryURL": "https://github.com/yutailang0119/SBPAsyncImage.git",
+        "state": {
+          "branch": null,
+          "revision": "9033e10e719f0cfe670fc81c3278a1f7e92dd25b",
+          "version": "0.1.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
