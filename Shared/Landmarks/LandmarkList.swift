@@ -24,9 +24,11 @@ public struct LandmarkList: View {
 
   public var body: some View {
     NavigationView {
-      List(filteredLandmarks) { landmark in
-        NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
-          LandmarkRow(landmark: landmark)
+      List {
+        ForEach(filteredLandmarks) { landmark in
+          NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
+            LandmarkRow(landmark: landmark)
+          }
         }
       }
       .navigationBarTitle("Landmarks", displayMode: .inline)
