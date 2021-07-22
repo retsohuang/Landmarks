@@ -8,8 +8,11 @@
 import SwiftUI
 
 public struct LandmarkList: View {
-  public let landmarks: [Landmark]
 
+  public let landmarks: [Landmark]
+  @State private var showFavoritesOnly = true
+
+  // MARK: - Initializer
   public init(landmarks: [Landmark]) {
     self.landmarks = landmarks
 
@@ -21,7 +24,7 @@ public struct LandmarkList: View {
 
   public var body: some View {
     NavigationView {
-      List(landmarks) { landmark in
+      List(filteredLandmarks) { landmark in
         NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
           LandmarkRow(landmark: landmark)
         }
@@ -31,13 +34,20 @@ public struct LandmarkList: View {
   }
 }
 
+// MARK: - Computed Properties
+extension LandmarkList {
+
+  private var filteredLandmarks: [Landmark] {
+    landmarks.filter { landmark in
+      (!showFavoritesOnly || landmark.isFavorite)
+    }
+  }
+
+}
+
 // MARK: - Preview
 public struct LandmarkList_Previews: PreviewProvider {
   public static var previews: some View {
-    ForEach(["iPhone SE (2nd generation)", "iPhone 12"], id: \.self) { deviceName in
-      LandmarkList(landmarks: landmarks)
-        .previewDevice(PreviewDevice(rawValue: deviceName))
-        .previewDisplayName(deviceName)
-    }
+    LandmarkList(landmarks: landmarks)
   }
 }
