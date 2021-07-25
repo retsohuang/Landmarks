@@ -17,7 +17,7 @@ public struct Landmark: Codable, Identifiable, Hashable {
   public let city: String
   public let state: String
   public let isFeatured: Bool
-  public let isFavorite: Bool
+  public var isFavorite: Bool
   public let park: String
   public let description: String
 

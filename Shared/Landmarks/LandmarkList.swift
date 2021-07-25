@@ -5,17 +5,14 @@
 //  Created by Retso Huang on 2021/7/18.
 //
 
+import Introspect
 import SwiftUI
 
 public struct LandmarkList: View {
-
-  public let landmarks: [Landmark]
-  @State private var showFavoritesOnly = true
+  @EnvironmentObject private var modelData: ModelData
 
   // MARK: - Initializer
-  public init(landmarks: [Landmark]) {
-    self.landmarks = landmarks
-
+  public init() {
     let defaultNavigationBarAppearance = UINavigationBarAppearance()
     defaultNavigationBarAppearance.configureWithOpaqueBackground()
 
@@ -25,6 +22,10 @@ public struct LandmarkList: View {
   public var body: some View {
     NavigationView {
       List {
+        Toggle(isOn: $modelData.showFavoritesOnly, label: {
+          Text("Favorites only")
+        })
+
         ForEach(filteredLandmarks) { landmark in
           NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
             LandmarkRow(landmark: landmark)
@@ -32,6 +33,12 @@ public struct LandmarkList: View {
         }
       }
       .navigationBarTitle("Landmarks", displayMode: .inline)
+      .introspectScrollView { scrollView in
+        scrollView.refreshControl = UIRefreshControl()
+      }
+      .introspectViewController(customize: { viewController in
+        viewController.navigationItem.backButtonTitle = ""
+      })
     }
   }
 }
@@ -40,8 +47,8 @@ public struct LandmarkList: View {
 extension LandmarkList {
 
   private var filteredLandmarks: [Landmark] {
-    landmarks.filter { landmark in
-      (!showFavoritesOnly || landmark.isFavorite)
+    modelData.landmarks.filter { landmark in
+      (!modelData.showFavoritesOnly || landmark.isFavorite)
     }
   }
 
@@ -50,6 +57,7 @@ extension LandmarkList {
 // MARK: - Preview
 public struct LandmarkList_Previews: PreviewProvider {
   public static var previews: some View {
-    LandmarkList(landmarks: landmarks)
+    LandmarkList()
+      .environmentObject(ModelData())
   }
 }
