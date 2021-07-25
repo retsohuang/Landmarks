@@ -36,9 +36,9 @@ public struct LandmarkList: View {
       .introspectScrollView { scrollView in
         scrollView.refreshControl = UIRefreshControl()
       }
-      .introspectViewController(customize: { viewController in
+      .introspectViewController { viewController in
         viewController.navigationItem.backButtonTitle = ""
-      })
+      }
     }
   }
 }
