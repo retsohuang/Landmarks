@@ -7,6 +7,7 @@
 
 import Introspect
 import SwiftUI
+import ActivityIndicatorView
 
 public struct LandmarkList: View {
   @EnvironmentObject private var modelData: ModelData

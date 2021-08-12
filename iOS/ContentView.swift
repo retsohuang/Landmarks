@@ -19,6 +19,7 @@ public struct ContentView: View {
 // MARK: - Preview
 public struct ContentView_Previews: PreviewProvider {
   public static var previews: some View {
-    ContentView().environmentObject(ModelData())
+    ContentView()
+      .environmentObject(ModelData())
   }
 }
