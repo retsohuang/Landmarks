@@ -27,4 +27,3 @@ struct FavoriteButton_Previews: PreviewProvider {
       .previewLayout(.sizeThatFits)
   }
 }
-
