@@ -12,6 +12,7 @@ final class ModelData: ObservableObject {
 
   @Published public var showFavoritesOnly = false
   @Published public var landmarks: [Landmark] = load("landmarkData.json")
+  public var hikes: [Hike] = load("hikeData.json")
 
 }
 
