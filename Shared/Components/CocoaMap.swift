@@ -8,10 +8,6 @@
 import SwiftUI
 import MapKit
 
-@available(iOS, introduced: 13.0, deprecated: 14.0, renamed: "SwiftUI.Map")
-@available(macOS, introduced: 10.15, deprecated: 11.0, renamed: "SwiftUI.Map")
-@available(tvOS, introduced: 13.0, deprecated: 14.0, renamed: "SwiftUI.Map")
-@available(watchOS, introduced: 6.0, deprecated: 7.0, renamed: "SwiftUI.Map")
 public typealias Map = CocoaMap
 
 @available(iOS, introduced: 13.0, deprecated: 14.0, renamed: "SwiftUI.Map")
@@ -20,18 +16,16 @@ public typealias Map = CocoaMap
 @available(watchOS, introduced: 6.0, deprecated: 7.0, renamed: "SwiftUI.Map")
 public struct CocoaMap: UIViewRepresentable {
 
-  public typealias UIViewType = MKMapView
-
   @Binding var coordinateRegion: MKCoordinateRegion
 
   // MARK: - UIViewRepresentable
-  public func makeUIView(context: UIViewRepresentableContext<CocoaMap>) -> MKMapView {
+  public func makeUIView(context: Context) -> MKMapView {
     let mapView = MKMapView()
     mapView.delegate = context.coordinator
     return mapView
   }
 
-  public func updateUIView(_ uiView: MKMapView, context: UIViewRepresentableContext<CocoaMap>) {
+  public func updateUIView(_ uiView: MKMapView, context: Context) {
     uiView.setRegion(coordinateRegion, animated: true)
   }
 

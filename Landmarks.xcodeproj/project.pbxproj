@@ -3,16 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		F2248AA826A2238B003198E3 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2248AA726A2238B003198E3 /* ModelData.swift */; };
-		F2249C7A26AA082600387F0F /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = F2249C7926AA082600387F0F /* Introspect */; };
 		F24957F626C430E800973041 /* RotatedBadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24957F526C430E800973041 /* RotatedBadgeSymbol.swift */; };
 		F24CE27526A2072000C45F62 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = F24CE27426A2072000C45F62 /* landmarkData.json */; };
 		F24CE27826A20B5B00C45F62 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24CE27726A20B5B00C45F62 /* Landmark.swift */; };
-		F285284426A5CCC1001CB3C9 /* SBPAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = F285284326A5CCC1001CB3C9 /* SBPAsyncImage */; };
 		F28A191626ADF3BE00F6F492 /* BadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28A191526ADF3BE00F6F492 /* BadgeSymbol.swift */; };
 		F2A3A3FE26A18B3900378E31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A3A3FD26A18B3900378E31 /* AppDelegate.swift */; };
 		F2A3A40026A18B3900378E31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A3A3FF26A18B3900378E31 /* SceneDelegate.swift */; };
@@ -20,7 +18,6 @@
 		F2A3A40426A18B3A00378E31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2A3A40326A18B3A00378E31 /* Assets.xcassets */; };
 		F2A3A40726A18B3A00378E31 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2A3A40626A18B3A00378E31 /* Preview Assets.xcassets */; };
 		F2A3A40A26A18B3A00378E31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A3A40826A18B3A00378E31 /* LaunchScreen.storyboard */; };
-		F2A3A41226A1B7F300378E31 /* Color+Figma.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A3A41126A1B7F300378E31 /* Color+Figma.swift */; };
 		F2A3A41726A1D3B200378E31 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A3A41626A1D3B200378E31 /* CircleImage.swift */; };
 		F2A3A41926A1D5B900378E31 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A3A41826A1D5B900378E31 /* MapView.swift */; };
 		F2A3A42126A1E53100378E31 /* CocoaMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A3A42026A1E53100378E31 /* CocoaMap.swift */; };
@@ -37,7 +34,6 @@
 		F2E4FD9126A3473A00C8F6FD /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E4FD9026A3473A00C8F6FD /* LandmarkRow.swift */; };
 		F2FCE97C26A449D800E5B1FA /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FCE97B26A449D800E5B1FA /* LandmarkList.swift */; };
 		F2FCE97E26A46D4100E5B1FA /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FCE97D26A46D4100E5B1FA /* LandmarkDetail.swift */; };
-		F2FF18B226C45F7700E168CC /* ActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = F2FF18B126C45F7700E168CC /* ActivityIndicatorView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,7 +50,6 @@
 		F2A3A40626A18B3A00378E31 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F2A3A40926A18B3A00378E31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2A3A40B26A18B3A00378E31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2A3A41126A1B7F300378E31 /* Color+Figma.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Figma.swift"; sourceTree = "<group>"; };
 		F2A3A41626A1D3B200378E31 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		F2A3A41826A1D5B900378E31 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		F2A3A42026A1E53100378E31 /* CocoaMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaMap.swift; sourceTree = "<group>"; };
@@ -78,9 +73,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F285284426A5CCC1001CB3C9 /* SBPAsyncImage in Frameworks */,
-				F2FF18B226C45F7700E168CC /* ActivityIndicatorView in Frameworks */,
-				F2249C7A26AA082600387F0F /* Introspect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,17 +145,8 @@
 				F2E4FD8F26A3472E00C8F6FD /* Landmarks */,
 				F24CE27626A2074000C45F62 /* Model */,
 				F24CE27326A2072000C45F62 /* Resources */,
-				F2A3A41426A1B80900378E31 /* Styles */,
 			);
 			path = Shared;
-			sourceTree = "<group>";
-		};
-		F2A3A41426A1B80900378E31 /* Styles */ = {
-			isa = PBXGroup;
-			children = (
-				F2A3A41126A1B7F300378E31 /* Color+Figma.swift */,
-			);
-			path = Styles;
 			sourceTree = "<group>";
 		};
 		F2A3A41526A1D3A600378E31 /* Components */ = {
@@ -228,9 +211,6 @@
 			);
 			name = Landmarks;
 			packageProductDependencies = (
-				F285284326A5CCC1001CB3C9 /* SBPAsyncImage */,
-				F2249C7926AA082600387F0F /* Introspect */,
-				F2FF18B126C45F7700E168CC /* ActivityIndicatorView */,
 			);
 			productName = Landmarks;
 			productReference = F2A3A3FA26A18B3900378E31 /* Landmarks.app */;
@@ -260,9 +240,6 @@
 			);
 			mainGroup = F2A3A3F126A18B3800378E31;
 			packageReferences = (
-				F285284226A5CCC1001CB3C9 /* XCRemoteSwiftPackageReference "SBPAsyncImage" */,
-				F2249C7826AA082600387F0F /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
-				F2FF18B026C45F7700E168CC /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */,
 			);
 			productRefGroup = F2A3A3FB26A18B3900378E31 /* Products */;
 			projectDirPath = "";
@@ -310,7 +287,6 @@
 				F24CE27826A20B5B00C45F62 /* Landmark.swift in Sources */,
 				F2A6B23426C591B1009601C3 /* HikeView.swift in Sources */,
 				F2A3A42126A1E53100378E31 /* CocoaMap.swift in Sources */,
-				F2A3A41226A1B7F300378E31 /* Color+Figma.swift in Sources */,
 				F2A3A40226A18B3900378E31 /* ContentView.swift in Sources */,
 				F2E4FD9126A3473A00C8F6FD /* LandmarkRow.swift in Sources */,
 				F2A3A41726A1D3B200378E31 /* CircleImage.swift in Sources */,
@@ -458,6 +434,7 @@
 				DEVELOPMENT_ASSET_PATHS = "iOS/Preview\\ Content";
 				DEVELOPMENT_TEAM = V5KJF243S8;
 				ENABLE_PREVIEWS = YES;
+				INFOPLIST_EXPAND_BUILD_SETTINGS = YES;
 				INFOPLIST_FILE = Shared/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -480,6 +457,7 @@
 				DEVELOPMENT_ASSET_PATHS = "iOS/Preview\\ Content";
 				DEVELOPMENT_TEAM = V5KJF243S8;
 				ENABLE_PREVIEWS = YES;
+				INFOPLIST_EXPAND_BUILD_SETTINGS = YES;
 				INFOPLIST_FILE = Shared/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -515,51 +493,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		F2249C7826AA082600387F0F /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.3;
-			};
-		};
-		F285284226A5CCC1001CB3C9 /* XCRemoteSwiftPackageReference "SBPAsyncImage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/yutailang0119/SBPAsyncImage.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.2;
-			};
-		};
-		F2FF18B026C45F7700E168CC /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/exyte/ActivityIndicatorView.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.7;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		F2249C7926AA082600387F0F /* Introspect */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F2249C7826AA082600387F0F /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
-			productName = Introspect;
-		};
-		F285284326A5CCC1001CB3C9 /* SBPAsyncImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F285284226A5CCC1001CB3C9 /* XCRemoteSwiftPackageReference "SBPAsyncImage" */;
-			productName = SBPAsyncImage;
-		};
-		F2FF18B126C45F7700E168CC /* ActivityIndicatorView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F2FF18B026C45F7700E168CC /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */;
-			productName = ActivityIndicatorView;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F2A3A3F226A18B3800378E31 /* Project object */;
 }

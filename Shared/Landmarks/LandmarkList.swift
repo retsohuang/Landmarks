@@ -5,43 +5,44 @@
 //  Created by Retso Huang on 2021/7/18.
 //
 
-import Introspect
 import SwiftUI
-import ActivityIndicatorView
 
 public struct LandmarkList: View {
   @EnvironmentObject private var modelData: ModelData
 
-  // MARK: - Initializer
-  public init() {
-    let defaultNavigationBarAppearance = UINavigationBarAppearance()
-    defaultNavigationBarAppearance.configureWithOpaqueBackground()
+  @State private var price = 0.0
 
-    UINavigationBar.appearance().standardAppearance = defaultNavigationBarAppearance
-  }
+  private let numberFormatter: NumberFormatter = {
+    let numberFormatter = NumberFormatter()
+    numberFormatter.numberStyle = .currency
+    numberFormatter.minimumFractionDigits = 0
+    numberFormatter.maximumFractionDigits = 2
+    return numberFormatter
+  }()
 
   public var body: some View {
-    NavigationView {
-      List {
-        Toggle(isOn: $modelData.showFavoritesOnly, label: {
-          Text("Favorites only")
-        })
-
-        ForEach(filteredLandmarks) { landmark in
-          NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
-            LandmarkRow(landmark: landmark)
-          }
-        }
-      }
-      .navigationBarTitle("Landmarks", displayMode: .inline)
-      .introspectScrollView { scrollView in
-        scrollView.refreshControl = UIRefreshControl()
-      }
-      .introspectViewController { viewController in
-        viewController.navigationItem.backButtonTitle = ""
-      }
-    }
+    TextField("Price", value: $price, formatter: numberFormatter)
+      .disableAutocorrection(true)
+      .border(Color(UIColor.separator))
+    Text(price.debugDescription)
   }
+
+//  public var body: some View {
+//    NavigationView {
+//      List {
+//        Toggle(isOn: $modelData.showFavoritesOnly, label: {
+//          Text("Favorites only")
+//        })
+//
+//        ForEach(filteredLandmarks) { landmark in
+//          NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
+//            LandmarkRow(landmark: landmark)
+//          }
+//        }
+//      }
+//      .navigationBarTitle("Landmarks", displayMode: .inline)
+//    }
+//  }
 }
 
 // MARK: - Computed Properties

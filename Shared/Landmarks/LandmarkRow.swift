@@ -5,7 +5,6 @@
 //  Created by Retso Huang on 2021/7/18.
 //
 
-import SBPAsyncImage
 import SwiftUI
 
 public struct LandmarkRow: View {

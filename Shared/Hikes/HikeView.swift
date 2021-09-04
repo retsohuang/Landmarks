@@ -7,6 +7,12 @@
 
 import SwiftUI
 
+extension AnyTransition {
+  static var moveAndFade: AnyTransition {
+    AnyTransition.move(edge: .trailing)
+  }
+}
+
 struct HikeView: View {
   var hike: Hike
   @State private var showDetail = false
@@ -27,17 +33,22 @@ struct HikeView: View {
         Spacer()
 
         Button(action: {
-          self.showDetail.toggle()
+          withAnimation {
+            showDetail.toggle()
+          }
         }) {
           Image(systemName: "chevron.right.circle")
             .imageScale(.large)
             .rotationEffect(.degrees(showDetail ? 90 : 0))
+            .scaleEffect(showDetail ? 1.5: 1)
             .padding()
+
         }
       }
 
       if showDetail {
         HikeDetail(hike: hike)
+          .transition(.moveAndFade)
       }
     }
   }
