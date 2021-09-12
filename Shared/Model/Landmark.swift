@@ -12,14 +12,14 @@ import SwiftUI
 public struct Landmark: Codable, Identifiable, Hashable {
 
   public let id: Int
-  public let name: String
-  public let category: String
+  public let category: Category
   public let city: String
-  public let state: String
-  public let isFeatured: Bool
-  public var isFavorite: Bool
-  public let park: String
   public let description: String
+  public let isFeatured: Bool
+  public let name: String
+  public let park: String
+  public let state: String
+  public var isFavorite: Bool
 
   private let coordinates: Coordinates
   private let imageName: String
@@ -31,6 +31,17 @@ extension Landmark {
   public struct Coordinates: Hashable, Codable {
     public let longitude: Double
     public let latitude: Double
+  }
+
+}
+
+// MARK: - Enum
+extension Landmark {
+
+  public enum Category: String, CaseIterable, Codable {
+    case lakes = "Lakes"
+    case rivers = "Rivers"
+    case mountains = "Mountains"
   }
 
 }
