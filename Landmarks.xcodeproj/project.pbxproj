@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F211A5A426EF911600E7E2B0 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F211A5A326EF911600E7E2B0 /* CategoryRow.swift */; };
+		F211A5A626EF940000E7E2B0 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F211A5A526EF940000E7E2B0 /* CategoryItem.swift */; };
 		F2248AA826A2238B003198E3 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2248AA726A2238B003198E3 /* ModelData.swift */; };
 		F24957F626C430E800973041 /* RotatedBadgeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24957F526C430E800973041 /* RotatedBadgeSymbol.swift */; };
 		F24CE27526A2072000C45F62 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = F24CE27426A2072000C45F62 /* landmarkData.json */; };
@@ -38,6 +40,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F211A5A326EF911600E7E2B0 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		F211A5A526EF940000E7E2B0 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 		F2248AA726A2238B003198E3 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		F24957F526C430E800973041 /* RotatedBadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatedBadgeSymbol.swift; sourceTree = "<group>"; };
 		F24CE27426A2072000C45F62 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
@@ -191,6 +195,8 @@
 			isa = PBXGroup;
 			children = (
 				F2D4E36426EDF62E0012A68B /* CategoryHome.swift */,
+				F211A5A326EF911600E7E2B0 /* CategoryRow.swift */,
+				F211A5A526EF940000E7E2B0 /* CategoryItem.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -291,6 +297,7 @@
 				F2A6B23326C591B1009601C3 /* HikeDetail.swift in Sources */,
 				F2248AA826A2238B003198E3 /* ModelData.swift in Sources */,
 				F24957F626C430E800973041 /* RotatedBadgeSymbol.swift in Sources */,
+				F211A5A426EF911600E7E2B0 /* CategoryRow.swift in Sources */,
 				F28A191626ADF3BE00F6F492 /* BadgeSymbol.swift in Sources */,
 				F2A6B22626C56E88009601C3 /* Badge.swift in Sources */,
 				F2FCE97E26A46D4100E5B1FA /* LandmarkDetail.swift in Sources */,
@@ -299,6 +306,7 @@
 				F2A6B23426C591B1009601C3 /* HikeView.swift in Sources */,
 				F2A3A42126A1E53100378E31 /* CocoaMap.swift in Sources */,
 				F2A3A40226A18B3900378E31 /* ContentView.swift in Sources */,
+				F211A5A626EF940000E7E2B0 /* CategoryItem.swift in Sources */,
 				F2E4FD9126A3473A00C8F6FD /* LandmarkRow.swift in Sources */,
 				F2A3A41726A1D3B200378E31 /* CircleImage.swift in Sources */,
 				F2AA4A3126ADCCB200344DCD /* BadgeBackground.swift in Sources */,
