@@ -38,5 +38,6 @@ public struct CategoryRow_Previews: PreviewProvider {
       categoryName: landmarks[0].category.rawValue,
       items: Array(landmarks.prefix(4))
     )
+    .previewLayout(.sizeThatFits)
   }
 }
