@@ -20,7 +20,7 @@ public struct ProfileSummary: View {
           .font(.title)
 
         Text("Notifications: \(profile.prefersNotifications ? "On": "Off")")
-        Text("Seasonal Photos: \(profile.sessionalPhoto.rawValue)")
+        Text("Seasonal Photos: \(profile.seasonalPhoto.rawValue)")
         Text("Gold Date: ") + Text(profile.goalDate, style: .date)
 
         Divider()
