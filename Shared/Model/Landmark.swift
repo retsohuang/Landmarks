@@ -53,6 +53,10 @@ extension Landmark {
     Image(imageName)
   }
 
+  public var featureImage: Image? {
+    isFeatured ? Image(imageName + "_feature"): nil
+  }
+
   public var locationCoordinate: CLLocationCoordinate2D {
     CLLocationCoordinate2D(latitude: coordinates.latitude, longitude: coordinates.longitude)
   }
